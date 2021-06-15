@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Main</title>
+        <link rel="stylesheet" href="style/scren.css" />
+        <link rel="stylesheet" href="style/screen.css" />
+
+        <script src="https://cdn.socket.io/4.0.1/socket.io.min.js" integrity="sha384-LzhRnpGmQP+lOvWruF/lgkcqD+WDVt9fU3H4BWmwP5u5LTmkUGafMcpZKNObVMLU" crossorigin="anonymous"></script>
+        <script src="script/alarm.js"></script>
+      </head>
+<body>
+    <nav>
+        <a href="Alarm.html">Alarm</a> 
+        <a href="Main.html">Main</a> |
+        <a href="Chart.html">Chart</a>        |
+        <a href="">pag4</a>
+      </nav>
+    <h1>alarm</h1>
+    <div>
+        <h2>AlarmStatus</h2>
+        <p class="js-alarm">aan/uit</p>
+        <div class="js-btn">
+            <button type="button" class="js-alarm-btn">Alarm aan/uit</button>
+    </div>
+
+    </div>
+
+    <div >
+        <h1>AlarmHistoriek</h1>
+        <table class='c-table js-alarmhistoriek'>
+            <tr><th>sensor</th><th>data</th></tr>
+            <tr><td>#sensor</td><td>#waarde</td></tr>
+        </table>
+       
+    </div>
+</body>
+</html>

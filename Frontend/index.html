@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style/normalize.css">
+  
+  <link rel="stylesheet" href="style/screen.css">
+  <script src="https://cdn.socket.io/4.0.1/socket.io.min.js" integrity="sha384-LzhRnpGmQP+lOvWruF/lgkcqD+WDVt9fU3H4BWmwP5u5LTmkUGafMcpZKNObVMLU" crossorigin="anonymous"></script>
+
+  <script defer src="script/login.js"></script>
+</head>
+
+<body>
+	<section class="o-row " style="color: black; height: 60em; size: 100%;">
+		<div class="o-container " style="">
+			<div class=" o-layout o-layout--align-center" >
+				<div class=" o-layout__item o-layout--align-center"  >
+				<!-- <main id="main-holder" > -->
+					<h1 id="login-header" style="text-align: center;">Login</h1>
+					<div class="o-layout__item" style="align-content: center;">
+						<div id="login-error-msg-holder" style="text-align: center;">
+							<p id="login-error-msg">Pin Invalid <span id="error-msg-second-line">/</span></p>
+						</div>
+						
+						<form id="login-form" style="margin-left: 35%; margin-right: 35%;">
+							<!-- <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username"> -->
+							<input type="password" name="password" id="password-field" class="login-form-field" placeholder="Enter pincode " maxlength="4">
+							<input type="submit" value="Login" id="login-form-submit">
+						</form>
+				</div>	
+				  
+				  <!-- </main>	 -->
+				</div>
+			</div>
+		</div>
+ 
+</section>
+</body>
+
+</html>

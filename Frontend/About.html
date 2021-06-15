@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Priority One</title>
+    <meta name="description" content="This is my HTML5 boilerplate." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="msapplication-TileColor" content="#5051db" />
+    <meta name="theme-color" content="#5051db" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5051db" />
+
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/screen.css" />
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        toggleNav();
+      });
+
+      function toggleNav() {
+        let toggleTrigger = document.querySelectorAll('.js-toggle-nav');
+        for (let i = 0; i < toggleTrigger.length; i++) {
+          toggleTrigger[i].addEventListener('click', function () {
+            console.log('ei');
+            document.querySelector('body').classList.toggle('has-mobile-nav');
+          });
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="c-page">
+      <header class="o-row o-row--md o-row--header o-row-dark">
+        <div class="o-container">
+          <div class="c-header">
+            <div class="" >
+
+            <div class="c-header__logo " >
+              <a href="Home.html" class="c-logo" style="padding-bottom: 25px; ;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="121" height="24.5" viewBox="0 0 121 24.5">
+                  <g id="Group_385" data-name="Group 385" transform="translate(-174.5 -32.5)">
+                    <g id="verified_user_black_24dp" transform="translate(174.5 32.5)">
+                      <path id="Path_115" data-name="Path 115" d="M0,0H24V24H0Z" fill="none" />
+                      <path id="Path_116" data-name="Path 116" d="M12,1,3,5v6c0,5.55,3.84,10.74,9,12,5.16-1.26,9-6.45,9-12V5Zm7,10a10.473,10.473,0,0,1-7,9.93A10.473,10.473,0,0,1,5,11V6.3l7-3.11L19,6.3Zm-11.59.59L6,13l4,4,8-8L16.59,7.58,10,14.17Z" fill="#fff" />
+                    </g>
+                    <line id="Line_15" data-name="Line 15" y2="24" transform="translate(201 33)" fill="none" stroke="#fff" stroke-width="1" />
+                    <text id="Priority_One" data-name="Priority One" transform="translate(203.5 37)" fill="#fff" font-size="16" font-family="Inter-Regular, Inter"><tspan x="0" y="16">Priority One</tspan></text>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+            <div class="c-header__nav c-header__nav--main">
+              <nav class="c-nav">
+                <ul class="o-list c-nav__list">
+                  <li class="c-nav__item"><a href="Alarm.html" class="c-nav__link">Alarm</a></li>
+                  <li class="c-nav__item"><a href="History.html" class="c-nav__link">History</a></li>
+                  <li class="c-nav__item"><a href="About.html" class="c-nav__link">About</a></li>
+                  <li class="c-nav__item"><a href="settings.html" class="c-nav__link">Settings</a></li>
+
+                </ul>
+              </nav>
+            </div>
+            <!-- <div class="c-header__nav">
+              <nav class="c-nav c-nav--meta">
+                <ul class="o-list c-nav__list">
+                  <li class="c-nav__item"><a href="#!" class="c-nav__link c-nav__link--meta">Careers</a></li>
+                  <li class="c-nav__item"><a href="#!" class="c-nav__link c-nav__link--meta">Blog</a></li>
+                  <li class="c-nav__item"><a href="#!" class="c-nav__link c-nav__link--meta">About</a></li>
+                </ul>
+              </nav>
+            </div> -->
+
+            <div class="c-header__mobile-nav-trigger">
+              <button class="o-button-reset c-nav-trigger js-toggle-nav">
+                <svg class="c-nav-trigger__svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div style="text-align: center; margin: auto; margin-top: 1em"><h1>About</h1></div>
+
+    <section class="o-row o-row--md">
+      <div class="o-container">
+        <div class="o-layout o-layout--align-center">
+          <div class="o-layout__item" style="max-width: 25em" style="margin: auto; text-align: left">
+            <h2>What?</h2>
+            <p>Priority One is a Home security project to ensure full security of your home. We can do that by using sensors to track down movement inside ( or outside ) the building.</p>
+            <h2>Who?</h2>
+            <p>Priority One is made by Cedric Lagrou. He is a student 'Multimedia and Creative Technologies' in 'Howest'</p>
+            <h2>Why?</h2>
+            <p>Theft is a common problem, whether you are in a rich or poor neighborhood, someone can always try to break in and steal something. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="o-row">
+      <div class="container">
+        <div class="o-layout o-layout--align-center">
+          <div class="o-layout__item">
+            <div class="u-max-width-sm">
+              
+              <h2>logo alarmstatus</h2>
+            </div>
+          </div>
+          <div class="o-layout__item" style="margin: auto">
+            <figure class="c-figure" style="float: none; width: 300px; padding: 10px; margin: auto">
+              <picture>
+                <img src="img/svg/security_black_24dp.png" alt="Alarm Secured logo" />
+              </picture>
+            </figure>
+          </div>
+          <div>
+            
+            <h2>more information:</h2>
+            <p>None</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <aside class="c-mobile-nav">
+      <div class="c-mobile-nav__bg"></div>
+      <div class="c-mobile-nav__body">
+        <div class="c-mobile-nav__header">
+          <a href="Home.html" class="c-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="121" height="24.5" viewBox="0 0 121 24.5">
+              <g id="Group_385" data-name="Group 385" transform="translate(-174.5 -32.5)">
+                <g id="verified_user_black_24dp" transform="translate(174.5 32.5)">
+                  <path id="Path_115" data-name="Path 115" d="M0,0H24V24H0Z" fill="none" />
+                  <path id="Path_116" data-name="Path 116" d="M12,1,3,5v6c0,5.55,3.84,10.74,9,12,5.16-1.26,9-6.45,9-12V5Zm7,10a10.473,10.473,0,0,1-7,9.93A10.473,10.473,0,0,1,5,11V6.3l7-3.11L19,6.3Zm-11.59.59L6,13l4,4,8-8L16.59,7.58,10,14.17Z" fill="#fff" />
+                </g>
+                <line id="Line_15" data-name="Line 15" y2="24" transform="translate(201 33)" fill="none" stroke="#fff" stroke-width="1" />
+                <text id="Priority_One" data-name="Priority One" transform="translate(203.5 37)" fill="#fff" font-size="16" font-family="Inter-Regular, Inter"><tspan x="0" y="16">Priority One</tspan></text>
+              </g>
+            </svg>
+          </a>
+          <button class="o-button-reset c-nav-trigger js-toggle-nav">
+            <svg class="c-nav-trigger__svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+            </svg>
+          </button>
+        </div>
+        <div class="c-mobile-nav__nav c-mobile-nav__nav--main">
+          <nav class="c-nav">
+            <ul class="o-list c-nav__list">
+              <li class="c-nav__item"><a href="Alarm.html" class="c-nav__link">Alarm</a></li>
+              <li class="c-nav__item"><a href="History.html" class="c-nav__link">History</a></li>
+              <li class="c-nav__item"><a href="About.html" class="c-nav__link">About</a></li>
+              <li class="c-nav__item"><a href="settings.html" class="c-nav__link">Settings</a></li>
+
+            </ul>
+          </nav>
+        </div>
+        <!-- <div class="c-mobile-nav__nav">
+          <nav class="c-nav c-nav--meta">
+            <ul class="o-list c-nav__list">
+              <li class="c-nav__item"><a href="#!" class="c-nav__link c-nav__link--meta">Careers</a></li>
+              <li class="c-nav__item"><a href="#!" class="c-nav__link c-nav__link--meta">Blog</a></li>
+              <li class="c-nav__item"><a href="#!" class="c-nav__link c-nav__link--meta">About</a></li>
+            </ul>
+          </nav>
+        </div> -->
+      </div>
+    </aside>
+  </body>
+</html>
